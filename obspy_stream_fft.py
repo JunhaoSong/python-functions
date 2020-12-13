@@ -2,6 +2,9 @@ import numpy as np
 import math
 from obspy.signal.util import smooth
 def cal_fft_matrix(stream, nsmooth=0):
+    '''
+    written by Junhao, SONG
+    '''
     st = stream.copy()
     WAVE, RESP = {}, {}
     
