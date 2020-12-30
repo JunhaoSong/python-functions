@@ -3,7 +3,7 @@ def get_run_time(st):
     '''
     Get the operating time windows of one station
     The input is suggested to be the 'headonly' stream for single component
-    
+    written by Junhao, SONG
     e.g.
         stream = obspy.read('*BHZ.SAC')
         get_run_time(stream)
