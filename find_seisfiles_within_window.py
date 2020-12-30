@@ -4,6 +4,8 @@ def find_seisfiles_within_window(seisfiles, window):
     '''
     input the seismic files list, starttime and endtime
     output the seismic files whose timeperiods span the time window
+    this function performs very well when there are lots of seismic data files
+    it's inappropriate to use obspy.read(***, starttime, endtime) when '***' contains many files
     '''
     output = np.array([])
     for seisfile in seisfiles:
